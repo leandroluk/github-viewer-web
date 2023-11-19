@@ -3,6 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/leandroluk/github-viewer-web",
+  "repository": "https://github.com/leandroluk/github-viewer-web.git",
+  "author": {
+    "email": "leandroluk@gmail.com",
+    "name": "Leandro Santiago Gomes",
+    "url": "https://www.linkedin.com/in/leandroluk/"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
