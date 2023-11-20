@@ -20,10 +20,16 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    /* Overriding */
+    "baseUrl": ".",
+    "paths": {
+      "#/*": [
+        "./src/*"
+      ]
+    }
   },
   "include": [
-    ".eslintrc.cjs",
     "src",
     "tests"
   ],

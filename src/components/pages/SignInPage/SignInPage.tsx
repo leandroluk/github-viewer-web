@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-type SignInPageProps = Testable;
+import { SignInPageProps } from './types';
 
 export const SignInPage: FC<SignInPageProps> = ({ testID = 'SignInPage' }) => {
   return <div data-testid={testID}>SignInPage</div>;

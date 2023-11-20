@@ -1,0 +1,1 @@
+export type SearchHistoryPageProps = Testable;
