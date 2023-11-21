@@ -12,21 +12,23 @@ const mockAuthorization: IAuthorization = {
   refreshToken: 'accessToken',
 };
 
-const authService: IAuthService = {
+export const authService: IAuthService = {
   getVerifyToken: async (data) => {
+    console.log('getVerifyToken', data);
     await sleep();
   },
   postRefreshToken: async (data) => {
+    console.log('postRefreshToken', data);
     await sleep();
     return mockAuthorization;
   },
   postSignIn: async (data) => {
+    console.log('postSignIn', data);
     await sleep();
     return mockAuthorization;
   },
   postSignUp: async (data) => {
+    console.log('postSignUp', data);
     await sleep();
   },
 };
-
-export default authService;

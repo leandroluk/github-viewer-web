@@ -42,6 +42,8 @@
     "@typescript-eslint/no-redeclare": "off",
     // react
     "react/react-in-jsx-scope": "off",
+    "react-hooks/rules-of-hooks": "off",
+    "react/jsx-props-no-spreading": "off",
     "react/function-component-definition": [
       "error",
       {
@@ -56,6 +58,8 @@
     "prettier/prettier": "error",
     // import
     "import/prefer-default-export": "off",
-    "import/extensions": "off"
+    "import/extensions": "off",
+    // default eslint
+    "no-underscore-dangle": "off"
   }
 }

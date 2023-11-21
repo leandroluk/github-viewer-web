@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
-import { LoadingPageProps } from './types';
+import { ILoadingPage } from './types';
 
-export const LoadingPage: FC<LoadingPageProps> = ({ testID = 'LoadingPage' }) => {
+export const LoadingPage: FC<ILoadingPage> = ({ testID = 'LoadingPage' }) => {
   return <div data-testid={testID}>LoadingPage</div>;
 };

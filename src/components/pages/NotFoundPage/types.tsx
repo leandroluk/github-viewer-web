@@ -1,1 +1,1 @@
-export type NotFoundPageProps = Testable;
+export type INotFoundPage = Testable;

@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
-import { NotFoundPageProps } from './types';
+import { INotFoundPage } from './types';
 
-export const NotFoundPage: FC<NotFoundPageProps> = ({ testID }) => {
+export const NotFoundPage: FC<INotFoundPage> = ({ testID }) => {
   return <div data-testid={testID}>NotFoundPage</div>;
 };

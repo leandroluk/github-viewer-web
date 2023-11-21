@@ -1,1 +1,1 @@
-export type SearchPageProps = Testable;
+export type ISearchPage = Testable;

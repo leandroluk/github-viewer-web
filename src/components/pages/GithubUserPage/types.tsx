@@ -1,1 +1,1 @@
-export type GithubUserPageProps = Testable;
+export type IGithubUserPage = Testable;

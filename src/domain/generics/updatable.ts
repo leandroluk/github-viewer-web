@@ -1,5 +1,5 @@
-import { IIndexable } from "./indexable";
+import { IIndexable } from './indexable';
 
 export type IUpdatable = IIndexable & {
-  timestamp: Date
-}
+  timestamp: Date;
+};

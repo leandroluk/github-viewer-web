@@ -1,1 +1,1 @@
-export type LoadingPageProps = Testable;
+export type ILoadingPage = Testable;

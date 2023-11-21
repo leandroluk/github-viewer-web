@@ -1,3 +1,3 @@
 export type IIndexable = {
-  id: string
-}
+  id: string;
+};

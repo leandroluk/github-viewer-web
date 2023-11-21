@@ -1,1 +1,1 @@
-export type SignInPageProps = Testable;
+export type ISignInPage = Testable;

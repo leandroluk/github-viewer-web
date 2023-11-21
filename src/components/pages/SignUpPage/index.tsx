@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
-import { SignUpPageProps } from './types';
+import { ISignUpPage } from './types';
 
-export const SignUpPage: FC<SignUpPageProps> = ({ testID = 'SignUpPage' }) => {
+export const SignUpPage: FC<ISignUpPage> = ({ testID = 'SignUpPage' }) => {
   return <div data-testid={testID}>SignUpPage</div>;
 };

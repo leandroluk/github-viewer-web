@@ -1,1 +1,1 @@
-export type ProfilePageProps = Testable;
+export type IProfilePage = Testable;
