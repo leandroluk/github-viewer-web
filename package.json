@@ -1,0 +1,76 @@
+{
+  "name": "@github-viewer/web",
+  "displayName": "Github Viewer",
+  "version": "0.0.1",
+  "description": "Backend criado para portifólio em NestJS",
+  "homepage": "https://github.com/leandroluk/github-viewer",
+  "repository": "https://github.com/leandroluk/github-viewer.git",
+  "author": {
+    "email": "leandroluk@gmail.com",
+    "name": "Leandro Santiago Gomes",
+    "url": "https://www.linkedin.com/in/leandroluk/"
+  },
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/next-js": "^2.2.0",
+    "@chakra-ui/react": "^2.8.2",
+    "@chakra-ui/theme-tools": "^2.1.2",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@hookform/resolvers": "^3.3.2",
+    "axios": "^1.6.2",
+    "axios-auth-refresh": "^3.3.6",
+    "buffer-esm": "^1.2.0",
+    "eslint-config-prettier": "^9.0.0",
+    "framer-motion": "^10.16.5",
+    "joi": "^17.11.0",
+    "next": "^14.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.48.2",
+    "react-icons": "^4.12.0",
+    "universal-cookie": "^6.1.1",
+    "zustand": "^4.4.6"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.38",
+    "@types/react-dom": "^18.2.17",
+    "commitlint": "^18.4.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.54.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-next": "^14.0.3",
+    "eslint-plugin-prettier": "^5.0.1",
+    "lefthook": "^1.5.3",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.2"
+  },
+  "commitlint": {
+    "extends": [
+      "./node_modules/@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "src/**/*.(ts|tsx)": [
+      "npm run lint"
+    ]
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "browser": {
+    "crypto": false,
+    "stream": false
+  }
+}
