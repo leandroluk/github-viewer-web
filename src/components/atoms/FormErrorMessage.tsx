@@ -3,7 +3,7 @@ import {
   FormErrorMessageProps as ChakraFormErrorMessageProps,
   SystemStyleObject,
   forwardRef,
-} from '@chakra-ui/react';
+} from "@chakra-ui/react";
 
 export type IFormErrorMessage = Testable<
   ChakraFormErrorMessageProps & {
@@ -11,8 +11,11 @@ export type IFormErrorMessage = Testable<
   }
 >;
 
-export const FormErrorMessage = forwardRef<IFormErrorMessage, 'div'>(
-  ({ testID, textAlign = 'justify', children, ...restFormErrorMessageProps }, ref) => {
+export const FormErrorMessage = forwardRef<IFormErrorMessage, "div">(
+  (
+    { testID, textAlign = "justify", children, ...restFormErrorMessageProps },
+    ref,
+  ) => {
     return (
       <ChakraFormErrorMessage
         data-testid={testID}
@@ -23,5 +26,5 @@ export const FormErrorMessage = forwardRef<IFormErrorMessage, 'div'>(
         {children}
       </ChakraFormErrorMessage>
     );
-  }
-) as typeof ChakraFormErrorMessage;
+  },
+);

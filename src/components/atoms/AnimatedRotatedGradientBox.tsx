@@ -1,5 +1,10 @@
-import { BoxProps, TransitionProps, chakra, forwardRef } from '@chakra-ui/react';
-import { isValidMotionProp, motion } from 'framer-motion';
+import {
+  BoxProps,
+  TransitionProps,
+  chakra,
+  forwardRef,
+} from "@chakra-ui/react";
+import { isValidMotionProp, motion } from "framer-motion";
 
 const ChakraBox = chakra(motion.div, { shouldForwardProp: isValidMotionProp });
 
@@ -11,18 +16,33 @@ export type IAnimatedRotatedGradientBox = Testable<
   }
 >;
 
-export const AnimatedRotatedGradientBox = forwardRef<IAnimatedRotatedGradientBox, 'div'>(
-  ({ testID = 'AnimatedRotatedGradientBox', firstColor, secondColor, duration = 15, ...restBoxProps }, ref) => {
+export const AnimatedRotatedGradientBox = forwardRef<
+  IAnimatedRotatedGradientBox,
+  "div"
+>(
+  (
+    {
+      testID = "AnimatedRotatedGradientBox",
+      firstColor,
+      secondColor,
+      duration = 15,
+      ...restBoxProps
+    },
+    ref,
+  ) => {
     const background = Array(5)
       .fill(0)
-      .map((_, i) => `linear-gradient(${i * 90}deg, ${firstColor}, ${secondColor})`);
+      .map(
+        (_, i) =>
+          `linear-gradient(${i * 90}deg, ${firstColor}, ${secondColor})`,
+      );
 
-    const transition: TransitionProps['transition'] = {
+    const transition: TransitionProps["transition"] = {
       duration,
-      ease: 'linear',
+      ease: "linear",
       repeat: Infinity,
-      repeatType: 'loop',
-    } as unknown as TransitionProps['transition'];
+      repeatType: "loop",
+    } as unknown as TransitionProps["transition"];
 
     return (
       <ChakraBox
@@ -33,5 +53,5 @@ export const AnimatedRotatedGradientBox = forwardRef<IAnimatedRotatedGradientBox
         transition={transition}
       />
     );
-  }
+  },
 );

@@ -1,4 +1,4 @@
-import { IEntity } from '#/domain/generics';
+import { IEntity } from "#/domain/generics";
 
 export type IUser = IEntity & {
   email: string;

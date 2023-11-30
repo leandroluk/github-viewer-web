@@ -1,4 +1,4 @@
-import { CSSProperties, FC } from 'react';
+import { CSSProperties, FC } from "react";
 
 export type ISvgGithubMark = Testable<{
   style?: CSSProperties;
@@ -6,7 +6,11 @@ export type ISvgGithubMark = Testable<{
   color?: string;
 }>;
 
-export const SvgGithubMark: FC<ISvgGithubMark> = ({ testID, color = 'currentColor', style }) => {
+export const SvgGithubMark: FC<ISvgGithubMark> = ({
+  testID = "SvgGithubMark",
+  color = "currentColor",
+  style,
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

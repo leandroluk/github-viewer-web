@@ -2,13 +2,14 @@
   // editor
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
   "editor.formatOnType": true,
   "editor.detectIndentation": false,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.organizeImports": true
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
   },
   "editor.rulers": [
     80,
@@ -23,31 +24,12 @@
   "files.associations": {
     ".env.example": "shellscript"
   },
-  // docker
-  "[dockercompose]": {
-    "editor.formatOnSave": false
-  },
-  // git
-  "git.inputValidation": "off",
   // jestrunner
   "jestrunner.runOptions": [
     "--testTimeout=999999"
   ],
-  // javascript
-  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
-  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
-  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
-  "javascript.preferences.importModuleSpecifier": "project-relative",
-  "javascript.preferences.quoteStyle": "single",
-  // typescript
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
-  "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
-  "typescript.format.insertSpaceBeforeFunctionParenthesis": false,
-  "typescript.preferences.importModuleSpecifier": "project-relative",
-  "typescript.preferences.useAliasesForRenames": true,
-  "typescript.preferences.quoteStyle": "single",
+  // git
+  "git.inputValidation": "off",
   // barrelr
-  "barrelr.lineEnding": "LF",
+  "barrelr.lineEnding": "LF"
 }

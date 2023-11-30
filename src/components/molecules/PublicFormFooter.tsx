@@ -1,10 +1,11 @@
-import { Box, Link } from '@chakra-ui/react';
-import NextLink from 'next/link';
-import { FC } from 'react';
+import { Box, Link } from "@chakra-ui/react";
+import { FC } from "react";
 
 export type IPublicFormFooter = Testable;
 
-export const PublicFormFooter: FC<IPublicFormFooter> = ({ testID = 'PublicFormFooter' }) => {
+export const PublicFormFooter: FC<IPublicFormFooter> = ({
+  testID = "PublicFormFooter",
+}) => {
   return (
     <Box
       data-testid={testID}
@@ -14,10 +15,9 @@ export const PublicFormFooter: FC<IPublicFormFooter> = ({ testID = 'PublicFormFo
       _hover={{ opacity: 1 }}
       transition="all 0.2s ease-in-out"
     >
-      Created by{' '}
+      Created by{" "}
       <Link
         color="eco.900"
-        as={NextLink}
         href="https://www.linkedin.com/in/leandroluk/"
         target="_blank"
         fontWeight="bold"

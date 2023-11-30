@@ -1,4 +1,4 @@
-import { IUpdatable } from './updatable';
+import { IUpdatable } from "./updatable";
 
 export type IEntity = IUpdatable & {
   createdAt: Date;
